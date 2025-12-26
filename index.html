@@ -12,7 +12,60 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body
+    class="font-['Rubik'] bg-[#0f1424ff] lg:flex flex-col justify-center items-center lg:w-[800px] mx-auto h-screen"
+  >
+    <article
+      class="text-[#6f76c8ff] flex lg:flex-row flex-col justify-center gap-6 lg:p-0 md:px-16 px-4 py-[80px]"
+    >
+      <div class="bg-[#1c1f4aff] rounded-2xl lg:w-[200px]">
+        <div
+          class="bg-[#5847ebff] lg:block flex items-center gap-4 rounded-2xl px-5 pl-5 pt-5 pb-14"
+        >
+          <div class="w-[70px] rounded-full border border-[3px] border-white">
+            <img
+              class="w-[70px] rounded-full"
+              src="./images/image-jeremy.png"
+              alt="image-jeremy"
+            />
+          </div>
+
+          <h1 class="text-[25px] text-[#bdc1ffff] leading-[130%] lg:mt-4">
+            <span class="text-[12px] leading-[100%] opacity-60">
+              Report for
+            </span>
+            <br />
+            Jeremy Robson
+          </h1>
+        </div>
+
+        <ul
+          id="timeframe"
+          class="px-5 pt-5 pb-6 leading-[230%] lg:block md:flex flex justify-center items-center md:gap-[150px] gap-14"
+        >
+          <li
+            data-time="daily"
+            class="cursor-pointer hover:text-white transition duration-300"
+          >
+            Daily
+          </li>
+          <li
+            data-time="weekly"
+            class="cursor-pointer hover:text-white transition duration-300"
+          >
+            Weekly
+          </li>
+          <li
+            data-time="monthly"
+            class="cursor-pointer hover:text-white transition duration-300"
+          >
+            Monthly
+          </li>
+        </ul>
+      </div>
+
+      <div id="card" class="grid lg:grid-cols-3 gap-6 lg:min-w-[700px]"></div>
+    </article>
     <script src="index.js"></script>
   </body>
 </html>
